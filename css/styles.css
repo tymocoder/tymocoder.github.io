@@ -1,0 +1,147 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #DFDFDF;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #856741;
+  margin: 0;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  display: flex;
+  justify-content: flex-end;
+}
+header div {
+  color: #DFDFDF;
+  width: 15%;
+  height: 100%;
+  display: flex;
+  padding-right: 15px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #F1F1F0;
+  margin: auto;
+  font-size: 1.2rem;
+  }
+.welcome-section {
+  min-height: 100vh;
+  text-align: center;
+  border-top: 0.1px solid #DFDFDF;
+}
+.welcome-section h1 {
+margin: 35vh 5% 0 5%;
+font-size: 2.5rem;
+}
+.welcome-section p {
+margin: 20px 5% 0 5%;
+font-size: 1.5rem;
+}
+.projects {
+  min-height: 100vh;
+  background-color: #442727;
+  border-top: 0.1px solid #442727;
+  text-align: center;
+}
+.projects h1 {
+    margin: 20vh 5% 3vh 5%;
+    font-size: 2.5rem;
+    color: #DFDFDF;
+  }
+.project-tile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}
+.project-preview {
+  height: 250px;
+  max-width: 90vw;
+  object-fit: contain;
+  margin-top: 8px;
+  padding: 0 4px;
+  border-radius: 10px;
+}
+.project-tile a {
+  text-decoration: none;
+  font-size: 1.2rem;
+    color: #DFDFDF;
+}
+.contact {
+  min-height: 90vh;
+  text-align: center;
+  border-top: 0.1px solid #DFDFDF;
+}
+.contact h1 {
+margin: 30vh 5% 0 5%;
+font-size: 2.5rem;
+}
+.contact p {
+margin: 20px 5% 0 5%;
+font-size: 1.5rem;
+}
+.social-icons {
+  margin: 20px auto;
+  max-width: 1080px;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+.social-icons a, footer a {
+  text-decoration: none;
+  color: #442727;
+  padding: 10px 0px;
+}
+footer {
+  border-top: 4px solid #856741;
+  text-align: center;
+  color: #442727;
+}
+@keyframes changecolor {
+  0% {
+     color: black;
+   }
+   20% {
+     color: red;
+   }
+   100% {
+     color: black;
+   }
+}
+.social-icons a:hover {
+  animation-name: changecolor;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+@media (max-width: 500px) {
+  header div {
+  width: 33%;
+}
+  .contact h1 {
+margin: 20vh 5% 0 5%;
+}
+}
+@media (max-width: 300px) {
+  header {
+    position: fixed;
+  top: 0;
+  left: 0;
+    flex-direction: column;
+    height: 6rem;
+    align-items: center;
+  }
+  header div {
+  width: 100%;
+}
+  .contact h1 {
+margin: 10vh 5% 0 5%;
+}
+}
